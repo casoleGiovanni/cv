@@ -21,11 +21,7 @@ body {
 }
 
 header,
-#img-name-bio,
-#education,
-#work-exp,
-#skills,
-#languages,
+section,
 footer {
   background: var(--secondary-color, #23213b);
   margin: var(--default-margin);
@@ -70,18 +66,18 @@ header {
   color: var(--secondary-color, #23213b);
 }
 
-#img-name-bio {
+.img-name-bio {
   display: flex;
   justify-content: space-around;
   border-radius: 12px;
 }
 
-#img-name-bio img {
+.img-name-bio img {
   width: 300px;
   border-radius: 50%;
 }
 
-#img-name-bio .name-bio {
+.img-name-bio .name-bio {
   align-self: center;
   text-align: end;
 }
@@ -90,9 +86,9 @@ header {
   font-size: 3em;
 }
 
-#education,
-#work-exp,
-#skills {
+.education,
+.work-exp,
+.skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +105,7 @@ td {
   text-align: center;
 }
 
-#education ul {
+.education ul {
   list-style-position:inside;
   text-align: center;
 }
@@ -130,7 +126,7 @@ td {
     align-items: center;
   }
 
-  #img-name-bio .name-bio {
+  .img-name-bio .name-bio {
     text-align: center;
   }
 
