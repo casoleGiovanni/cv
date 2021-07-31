@@ -38,13 +38,25 @@ header {
   z-index: 99;
 }
 
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  text-align: center;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+
 .wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 80%;
   margin: 0 auto;
   padding: 25px;
+  align-content: space-between;
+  align-items: center;
 }
 
 .nav-list {
@@ -101,4 +113,30 @@ header {
 .education ul {
   margin: 0 auto;
   text-align: center;
+  list-style-position: inside;
+}
+
+@media all and (max-width: 619px) {
+  .links-name {
+    display: none;
+  }
+
+  .nav-list a {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .img-name-bio img {
+    width: 200px;
+  }
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-bio {
+    text-align: center;
+  }
+
 }
