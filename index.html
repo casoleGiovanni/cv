@@ -1,130 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link id="mode-style" rel="stylesheet" href="css/dark-mode-style.css" />
+    <title>Giovanni's Personal Site</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css" rel="stylesheet" />
-  <link id="dark-mode-style" rel="stylesheet" href="css/dark-mode-style.css" />
-  <link id="light-mode-style" rel="stylesheet" href="css/light-mode-style.css" />
-  <title>Giovanni's Personal Site</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#">
+              <i class="bx bx-home"></i>
+              <span class="links-name">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-folder-open"></i>
+              <span class="links-name">Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-user"></i>
+              <span class="links-name">About Me</span>
+            </a>
+          </li>
+          <li>
+            <a
+              id="mode-selector"
+              href="#"
+              onclick="mode_switcher(); mode_sel_icon_change()"
+              ><i class="bx bxs-sun"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <li>
-          <a href="#">
-            <i class="bx bx-home"></i>
-            <span class="links-name">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-folder-open"></i>
-            <span class="links-name">Portfolio</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-user"></i>
-            <span class="links-name">About Me</span>
-          </a>
-        </li>
-      </ul>
-      <!-- <div class="mode-style-selector">
-            <i class='bx bxs-sun'></i>
-            <i class='bx bxs-moon' ></i>
-          </div> -->
-    </nav>
-  </header>
-
-  <main>
-    <section class="img-name-bio">
-      <img src="images/me.jpg" alt="Giovanni profile picture" />
-      <div class="name-bio">
-        <h1 class="name">Giovanni Casole</h1>
-        <div class="bio">
-          <p>Aspiring Web Developer and Game Developer.</p>
-          <p>
-            At the moment, I'm studying Web Development so that I can make
-            enough money to study Game Development.
-          </p>
+    <main>
+      <section class="img-name-bio">
+        <div class="wrap">
+          <img src="images/me.jpg" alt="Giovanni profile picture" />
+          <div class="name-bio">
+            <h1 class="name">Giovanni Casole</h1>
+            <div class="bio">
+              <p>Aspiring Web Developer and Game Developer.</p>
+              <p>
+                At the moment, I'm studying Web Development so that I can make
+                enough money to study Game Development.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="education">
-      <h2>Education and Completed courses</h2>
-      <ul>
-        <li>
-          Istituto Tecnico Commerciale "Amerigo Vespucci". Graduaded from high school in 2005.
-        </li>
-        <li>The Complete Web Developer Bootcamp</li>
-        <li>The Web Developer Bootcamp 2021</li>
-        <li>FreeCodeCamp Curriculum</li>
-      </ul>
-    </section>
+      <section class="education">
+        <div class="wrap">
+          <ul>
+            <caption>
+              <h2>Education and Completed courses</h2>
+            </caption>
+            <li>
+              Istituto Tecnico Commerciale "Amerigo Vespucci". Graduaded from
+              high school in 2005.
+            </li>
+            <li>The Complete Web Developer Bootcamp</li>
+            <li>The Web Developer Bootcamp 2021</li>
+            <li>FreeCodeCamp Curriculum</li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="work-exp">
-      <table>
-        <caption>
-          <h2>Working Experiences</h2>
-        </caption>
-        <thead>
-          <tr>
-            <th>Dates</th>
-            <th>Experiences</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2005 - 2013</td>
-            <td>Working in a tobacco shop in Gallipoli (Italy)</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section class="work-exp">
+        <div class="wrap">
+          <table>
+            <caption>
+              <h2>Working Experiences</h2>
+            </caption>
+            <thead>
+              <tr>
+                <th>Dates</th>
+                <th>Experiences</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2005 - 2013</td>
+                <td>Working in a tobacco shop in Gallipoli (Italy)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <section class="skills">
-      <table>
-        <caption>
-          <h2>Skills</h2>
-        </caption>
-        <thead>
-          <tr>
-            <th>Skill</th>
-            <th>Level</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Web Development</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>Python Programming</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section class="skills">
+        <div class="wrap">
+          <table>
+            <caption>
+              <h2>Skills</h2>
+            </caption>
+            <thead>
+              <tr>
+                <th>Skill</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Development</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td>Python Programming</td>
+                <td>Intermediate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-    <section>
-      <table>
-        <caption>
-          <h2>Languages</h2>
-        </caption>
-      </table>
-    </section>
-  </main>
+      <section>
+        <div class="wrap">
+          <table>
+            <caption>
+              <h2>Languages</h2>
+            </caption>
+          </table>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact_me.html">Contact me</a>
-  </footer>
-</body>
+    <footer>
+      <a href="hobbies.html">My Hobbies</a>
+      <a href="contact_me.html">Contact me</a>
+    </footer>
 
+    <script src="js/script.js"></script>
+  </body>
 </html>

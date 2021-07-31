@@ -13,6 +13,8 @@
   color: #fff;
   border: none;
   font-family: "Noto Sans", sans-serif;
+  transition: background 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 body {
@@ -24,19 +26,32 @@ header,
 section,
 footer {
   background: var(--secondary-color, #23213b);
-  margin: var(--default-margin);
+  margin: var(--default-margin, 15px 20px);
   border-radius: 12px;
-  padding: 15px;
 }
 
 header {
-  padding: 30px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 83px;
 }
 
 .nav-list li {
@@ -46,19 +61,19 @@ header {
 .nav-list a {
   font-size: 1.5em;
   padding: 15px;
-  background: var(--secondary-color, #23213b);
+  background: var(--main-color, #11101e);
   border-radius: 12px;
   text-decoration: none;
   transition: background 0.5s ease;
 }
 
-.nav-list a:hover {
-  background: #fff;
-}
-
 .nav-list .links-name,
 .nav-list i {
   transition: color 0.5s ease;
+}
+
+.nav-list a:hover {
+  background: #fff;
 }
 
 .nav-list a:hover .links-name,
@@ -67,18 +82,15 @@ header {
 }
 
 .img-name-bio {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 12px;
+  margin-top: 113px;
 }
 
 .img-name-bio img {
-  width: 300px;
+  width: 428.5px;
   border-radius: 50%;
 }
 
-.img-name-bio .name-bio {
-  align-self: center;
+.name-bio {
   text-align: end;
 }
 
@@ -86,48 +98,7 @@ header {
   font-size: 3em;
 }
 
-.education,
-.work-exp,
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-th,
-td {
-  padding: 10px;
-  border: 1px solid #fff;
-  text-align: center;
-}
-
 .education ul {
-  list-style-position:inside;
+  margin: 0 auto;
   text-align: center;
-}
-
-@media all and (max-width: 619px) {
-  .links-name {
-    display: none;
-  }
-
-  .nav-list a {
-    font-size: 2em;
-  }
-}
-
-@media all and (max-width: 600px) {
-  #img-name-bio {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-name-bio .name-bio {
-    text-align: center;
-  }
-
 }
