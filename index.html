@@ -8,37 +8,34 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- <link id="mode-style" rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>Giovanni's Personal Site</title>
   </head>
 
-  <body>
-    <header>
+  <body class="dark">
+    <header class="dark">
       <nav>
         <ul class="nav-list">
           <li>
-            <a href="#">
+            <a href="#" class="dark">
               <i class="bx bx-home"></i>
               <span class="links-name">Home</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" class="dark">
               <i class="bx bxs-folder-open"></i>
               <span class="links-name">Portfolio</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" class="dark">
               <i class="bx bx-user"></i>
               <span class="links-name">About Me</span>
             </a>
           </li>
-          <li>
-            <a
-              id="mode-selector"
-              href="#"
-              onclick="mode_switcher(); mode_sel_icon_change()"
+          <li onclick="switch_style_mode()">
+            <a id="mode-selector" href="#" class="dark"
               ><i class="bx bxs-sun"></i
             ></a>
           </li>
@@ -47,7 +44,7 @@
     </header>
 
     <main>
-      <section class="img-name-bio">
+      <section class="dark img-name-bio">
         <div class="wrap">
           <img src="images/me.jpg" alt="Giovanni profile picture" />
           <div class="name-bio">
@@ -63,7 +60,7 @@
         </div>
       </section>
 
-      <section class="education">
+      <section class="dark education">
         <div class="wrap">
           <ul>
             <caption>
@@ -80,7 +77,7 @@
         </div>
       </section>
 
-      <section class="work-exp">
+      <section class="dark work-exp">
         <div class="wrap">
           <table>
             <caption>
@@ -102,7 +99,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="dark skills">
         <div class="wrap">
           <table>
             <caption>
@@ -128,7 +125,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="dark languages">
         <div class="wrap">
           <table>
             <caption>
@@ -139,7 +136,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="dark">
       <a href="hobbies.html">My Hobbies</a>
       <a href="contact_me.html">Contact me</a>
     </footer>
