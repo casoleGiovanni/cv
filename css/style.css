@@ -114,12 +114,20 @@ th.light {
   background: var(--main-light-color, hsl(245, 30%, 91%));
 }
 
-.wrap {
+.wrap-multiple {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
   align-items: center;
+}
+
+.wrap-one-element {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .img-name-bio img {
