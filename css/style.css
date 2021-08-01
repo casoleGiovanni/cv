@@ -144,7 +144,7 @@ th.light {
 }
 
 @media (max-width: 950px) {
-  .wrap {
+  .wrap-multiple {
     flex-direction: column;
   }
 
