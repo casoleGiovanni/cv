@@ -122,3 +122,9 @@ h2 {
     text-align: center;
   }
 }
+
+@media (max-width: 360px) {
+  .img-name-bio img {
+    width: 200px;
+  }
+}
