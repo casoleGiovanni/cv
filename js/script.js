@@ -1,6 +1,17 @@
-function color_changes() {
-  var sections = document.querySelectorAll(".dark, .light");
+var sections = document.querySelectorAll(".col-mode");
+let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
+if (matched) {
+  sections.forEach((element) => {
+    element.classList.add("dark");
+  });
+} else {
+  sections.forEach((element) => {
+    element.classList.add("light");
+  });
+}
+
+function color_changes() {
   sections.forEach((element) => {
     if (element.classList.contains("dark")) {
       element.classList.remove("dark");
