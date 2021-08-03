@@ -131,7 +131,7 @@ th {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
   .img-name-bio img {
     width: 200px;
   }
