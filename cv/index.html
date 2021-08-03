@@ -8,35 +8,37 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link rel="stylesheet" href="css/alt-style.css" />
+    <link id="mode-style" rel="stylesheet" href="css/dark-mode-style.css" />
     <title>Giovanni's Personal Site</title>
   </head>
 
-  <body class="col-mode">
-    <header class="col-mode">
+  <body>
+    <header>
       <nav>
         <ul class="nav-list">
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bx-home"></i>
               <span class="links-name">Home</span>
             </a>
           </li>
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bxs-folder-open"></i>
               <span class="links-name">Portfolio</span>
             </a>
           </li>
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bx-user"></i>
               <span class="links-name">About Me</span>
             </a>
           </li>
-          <li onclick="switch_color_scheme()">
-            <a id="mode-selector" href="#" class="col-mode"
+          <li>
+            <a
+              id="mode-selector"
+              href="#"
+              onclick="mode_switcher(); mode_sel_icon_change()"
               ><i class="bx bxs-sun"></i
             ></a>
           </li>
@@ -45,26 +47,24 @@
     </header>
 
     <main>
-      <section class="col-mode img-name-bio">
-        <div class="wrap-multiple">
+      <section class="img-name-bio">
+        <div class="wrap">
           <img src="images/me.jpg" alt="Giovanni profile picture" />
           <div class="name-bio">
             <h1 class="name">Giovanni Casole</h1>
             <div class="bio">
+              <p>Aspiring Web Developer and Game Developer.</p>
               <p>
-                Hello, everyone. I am Giovanni. I am an aspiring Web Developer
-                studing really hard to reach my goal. <br />
-                I am developing this site/page as an exercise and also as a
-                resume. With time I will include a portfolio of sites/pages that
-                I have developed.
+                At the moment, I'm studying Web Development so that I can make
+                enough money to study Game Development.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="col-mode education">
-        <div class="wrap-one-element">
+      <section class="education">
+        <div class="wrap">
           <ul>
             <caption>
               <h2>Education and Completed courses</h2>
@@ -80,58 +80,56 @@
         </div>
       </section>
 
-      <section class="col-mode work-exp">
-        <div class="wrap-one-element">
+      <section class="work-exp">
+        <div class="wrap">
           <table>
             <caption>
               <h2>Working Experiences</h2>
             </caption>
             <thead>
               <tr>
-                <th class="col-mode">Dates</th>
-                <th class="col-mode">Experiences</th>
+                <th>Dates</th>
+                <th>Experiences</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="col-mode">2005 - 2013</td>
-                <td class="col-mode">
-                  Working in a tobacco shop in Gallipoli (Italy)
-                </td>
+                <td>2005 - 2013</td>
+                <td>Working in a tobacco shop in Gallipoli (Italy)</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="col-mode skills">
-        <div class="wrap-one-element">
+      <section class="skills">
+        <div class="wrap">
           <table>
             <caption>
               <h2>Skills</h2>
             </caption>
             <thead>
               <tr>
-                <th class="col-mode">Skill</th>
-                <th class="col-mode">Level</th>
+                <th>Skill</th>
+                <th>Level</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="col-mode">Web Development</td>
-                <td class="col-mode">Intermediate</td>
+                <td>Web Development</td>
+                <td>Intermediate</td>
               </tr>
               <tr>
-                <td class="col-mode">Python Programming</td>
-                <td class="col-mode">Intermediate</td>
+                <td>Python Programming</td>
+                <td>Intermediate</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="col-mode languages">
-        <div class="wrap-one-element">
+      <section>
+        <div class="wrap">
           <table>
             <caption>
               <h2>Languages</h2>
@@ -141,18 +139,11 @@
       </section>
     </main>
 
-    <footer class="col-mode">
-      <div class="wrap-one-element">
-        <!-- <a href="hobbies.html">My Hobbies</a>
-        <a href="contact_me.html">Contact me</a> -->
-        <p>
-          This site/page has a fully funtional dark/light mode switch, can
-          detect the current mode of the device that this site is visited on and
-          adjust accordingly. + it is very responsive.
-        </p>
-      </div>
+    <footer>
+      <a href="hobbies.html">My Hobbies</a>
+      <a href="contact_me.html">Contact me</a>
     </footer>
 
-    <script src="js/alt-script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

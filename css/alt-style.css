@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-:root {
-  --main-dark-color: hsl(245, 30%, 9%);
-  --secondary-dark-color: hsl(245, 30%, 18%);
-  --main-light-color: hsl(245, 30%, 82%);
-  --secondary-light-color: hsl(245, 30%, 91%);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-background-color: hsl(245, 30%, 9%);
+    --secondary-background-color: hsl(245, 30%, 18%);
+    --main-text-color: hsl(245, 30%, 82%);
+    --secondary-text-color: hsl(245, 30%, 91%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-background-color: hsl(245, 30%, 82%);
+    --secondary-background-color: hsl(245, 30%, 91%);
+    --main-text-color: hsl(245, 30%, 9%);
+    --secondary-text-color: hsl(245, 30%, 18%);
+  }
 }
 
 * {
@@ -15,40 +26,20 @@
 }
 
 body {
+  background: var(--main-background-color);
+  color: var(--main-text-color);
   transition: all 0.5s ease;
-}
-
-body.dark {
-  background: var(--main-dark-color, hsl(245, 30%, 9%));
-  color: var(--main-light-color, hsl(245, 30%, 82%));
-}
-
-body.light {
-  background: var(--main-light-color, hsl(245, 30%, 82%));
-  color: var(--main-dark-color, hsl(245, 30%, 9%));
 }
 
 header,
 section,
 footer {
   margin: 15px 20px;
-  padding: 15px 0;
+  padding: 15px;
   border-radius: 12px;
+  background: var(--secondary-background-color);
+  color: var(--secondary-text-color);
   transition: all 0.5s ease;
-}
-
-header.dark,
-section.dark,
-footer.dark {
-  background: var(--secondary-dark-color, hsl(245, 30%, 18%));
-  color: var(--secondary-light-color, hsl(245, 30%, 91%));
-}
-
-header.light,
-section.light,
-footer.light {
-  background: var(--secondary-light-color, hsl(245, 30%, 91%));
-  color: var(--secondary-dark-color, hsl(245, 30%, 18%));
 }
 
 h1 {
@@ -70,17 +61,7 @@ table {
 td,
 th {
   padding: 10px;
-  transition: all 0.5s ease;
-}
-
-td.dark,
-th.dark {
-  border: 1px solid var(--main-light-color, hsl(245, 30%, 82%));
-}
-
-td.light,
-th.light {
-  border: 1px solid var(--main-dark-color, hsl(245, 30%, 9%));
+  border: 1px solid var(--main-text-color);
 }
 
 .nav-list {
@@ -101,19 +82,14 @@ th.light {
   padding: 15px;
   border-radius: 12px;
   text-decoration: none;
+  background: var(--main-background-color);
+  color: var(--main-text-color);
   transition: all 0.5s ease;
 }
 
-.nav-list a.dark,
-.nav-list a.light:hover {
-  background: var(--main-dark-color, hsl(245, 30%, 9%));
-  color: var(--main-light-color, hsl(245, 30%, 82%));
-}
-
-.nav-list a.dark:hover,
-.nav-list a.light {
-  background: var(--main-light-color, hsl(245, 30%, 82%));
-  color: var(--main-dark-color, hsl(245, 30%, 9%));
+.nav-list a:hover {
+  background: var(--main-text-color);
+  color: var(--main-background-color);
 }
 
 .wrap-multiple {

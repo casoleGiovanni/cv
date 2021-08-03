@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+:root {
+  --main-color: #11101e;
+  --secondary-color: #23213b;
+  --default-margin: 15px 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border: none;
+  font-family: "Noto Sans", sans-serif;
+  transition: background 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+body {
+  position: relative;
+  background: var(--main-color, #11101e);
+}
+
+header,
+section,
+footer {
+  background: var(--secondary-color, #23213b);
+  margin: var(--default-margin, 15px 20px);
+  border-radius: 12px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  text-align: center;
+  border: solid 1px #fff;
+  padding: 10px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+  align-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 83px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 1.5em;
+  padding: 15px;
+  background: var(--main-color, #11101e);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+
+.nav-list .links-name,
+.nav-list i {
+  transition: color 0.5s ease;
+}
+
+.nav-list a:hover {
+  background: #fff;
+}
+
+.nav-list a:hover .links-name,
+.nav-list a:hover i {
+  color: var(--secondary-color, #23213b);
+}
+
+.img-name-bio {
+  margin-top: 113px;
+}
+
+.img-name-bio img {
+  width: 428.5px;
+  border-radius: 50%;
+}
+
+.name-bio {
+  text-align: end;
+}
+
+.name-bio h1 {
+  font-size: 3em;
+}
+
+.education ul {
+  margin: 0 auto;
+  text-align: center;
+  list-style-position: inside;
+}
+
+@media all and (max-width: 619px) {
+  .links-name {
+    display: none;
+  }
+
+  .nav-list a {
+    font-size: 2em;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .img-name-bio img {
+    width: 200px;
+  }
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-bio {
+    text-align: center;
+  }
+
+}
