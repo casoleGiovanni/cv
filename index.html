@@ -13,39 +13,37 @@
     <title>Giovanni's Personal Site</title>
   </head>
 
-  <body class="col-mode">
-    <header class="col-mode">
+  <body>
+    <header>
       <nav>
         <ul class="nav-list">
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bx-home"></i>
               <span class="links-name">Home</span>
             </a>
           </li>
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bxs-folder-open"></i>
               <span class="links-name">Portfolio</span>
             </a>
           </li>
           <li>
-            <a href="#" class="col-mode">
+            <a href="#">
               <i class="bx bx-user"></i>
               <span class="links-name">About Me</span>
             </a>
           </li>
-          <li onclick="switch_color_scheme()">
-            <a id="mode-selector" href="#" class="col-mode"
-              ><i class="bx bxs-sun"></i
-            ></a>
-          </li>
+          <!-- <li>
+            <a id="mode-selector" href="#"><i class="bx bxs-sun"></i></a>
+          </li> -->
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="col-mode img-name-bio">
+      <section class="img-name-bio">
         <div class="wrap-multiple">
           <img src="images/me.jpg" alt="Giovanni profile picture" />
           <div class="name-bio">
@@ -63,7 +61,7 @@
         </div>
       </section>
 
-      <section class="col-mode education">
+      <section class="education">
         <div class="wrap-one-element">
           <ul>
             <caption>
@@ -80,7 +78,7 @@
         </div>
       </section>
 
-      <section class="col-mode work-exp">
+      <section class="work-exp">
         <div class="wrap-one-element">
           <table>
             <caption>
@@ -88,23 +86,21 @@
             </caption>
             <thead>
               <tr>
-                <th class="col-mode">Dates</th>
-                <th class="col-mode">Experiences</th>
+                <th>Dates</th>
+                <th>Experiences</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="col-mode">2005 - 2013</td>
-                <td class="col-mode">
-                  Working in a tobacco shop in Gallipoli (Italy)
-                </td>
+                <td>2005 - 2013</td>
+                <td>Working in a tobacco shop in Gallipoli (Italy)</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="col-mode skills">
+      <section class="skills">
         <div class="wrap-one-element">
           <table>
             <caption>
@@ -112,25 +108,25 @@
             </caption>
             <thead>
               <tr>
-                <th class="col-mode">Skill</th>
-                <th class="col-mode">Level</th>
+                <th>Skill</th>
+                <th>Level</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="col-mode">Web Development</td>
-                <td class="col-mode">Intermediate</td>
+                <td>Web Development</td>
+                <td>Intermediate</td>
               </tr>
               <tr>
-                <td class="col-mode">Python Programming</td>
-                <td class="col-mode">Intermediate</td>
+                <td>Python Programming</td>
+                <td>Intermediate</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="col-mode languages">
+      <section class="languages">
         <div class="wrap-one-element">
           <table>
             <caption>
@@ -141,18 +137,15 @@
       </section>
     </main>
 
-    <footer class="col-mode">
+    <footer>
       <div class="wrap-one-element">
         <!-- <a href="hobbies.html">My Hobbies</a>
         <a href="contact_me.html">Contact me</a> -->
         <p>
-          This site/page has a fully funtional dark/light mode switch, can
-          detect the current mode of the device that this site is visited on and
-          adjust accordingly. + it is very responsive.
+          This site/page can detect the current mode of the device that this
+          site is visited on and adjust accordingly. + it is very responsive.
         </p>
       </div>
     </footer>
-
-    <script src="js/alt-script.js"></script>
   </body>
 </html>
